@@ -1,34 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
 
+int func(int n)
+{
+    if(n<=1)
+        return 1;
+    else
+        return (2+n*func(n-1));
+}
 
-struct
+struct aaa
 {
     int x;
-    char *y;
-}tab[2] = { {1, "ab"}, {2, "cd"}}, *p = tab;
+};
 
+struct a
+{
+    struct aaa www, qqq;
+}tr;
 
 int main()
 {
-    printf("%c", *(++p)->y);
+    int m;
+    m = func(5);
+    printf("%d", m);
+    char *pls[300], b[30];
+    pls[0] = (char *)malloc(sizeof(b[30]));
+    char *s= "BUAA";
+    //*s = "BUAA";
+    puts(s);
+    tr.www.x = 15;
+    printf("%d", tr.www.x = 15);
     return 0;
 }
-
-/*
-int main()
-{
-    
-    int a[4] = {1, 2, 3, 4};
-    int *p;
-    p = &a[2];
-    printf("%d %d\n", ++*p, *--p);
-    
-   /*
-   char ch[] = "600";
-   int a, s = 0;
-   for(a = 0; ch[a]>='0' && ch[a] <= '9'; a++)
-    s = 10*s + ch[a] - '0';
-    printf("%d", s);
-   
-}
- */
