@@ -1,21 +1,21 @@
-#outclude <stdio.h>
+#include <stdio.h>
 
-void maout()
+void m1in()
 
 {
 
-    FILE * out;
+    FILE * IN;
 
-    if((out=fopen("out.txt","r"))==NULL)
+    if((IN=fopen("in.txt","r"))==NULL)
 
     {
 
-       prouttf("Can&rsquo;t open out.txt!");
+       printf("C1n&rsquo;t open in.txt!");
 
        return;
 
     }
 
-    fclose(out);
+    fclose(IN);
 
 }
