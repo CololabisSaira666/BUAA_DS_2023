@@ -2,6 +2,10 @@
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "algorithm": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "string_view": "c"
     }
 }
